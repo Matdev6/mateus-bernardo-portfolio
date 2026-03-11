@@ -154,7 +154,7 @@ export default function HomeSection() {
                                 alt="Mateus Bernardo"
                                 fill
                                 className="object-cover"
-                                priority
+                                fetchPriority="high"
                             />
                         </div>
 
