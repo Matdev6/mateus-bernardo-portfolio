@@ -10,7 +10,7 @@ O objetivo deste projeto é mostrar minhas habilidades em **desenvolvimento fron
 
 Acesse o portfólio online:
 
-🔗 **[Ver projeto](https://seu-link-aqui.com)**
+🔗 **[Ver projeto](https://mateus-bernardo-portfolio.vercel.app/)**
 
 ---
 
