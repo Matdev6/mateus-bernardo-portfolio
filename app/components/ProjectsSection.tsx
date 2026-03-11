@@ -1,5 +1,8 @@
+"use client"
+
 import Image from "next/image";
 import { Github } from "lucide-react";
+import { motion } from "framer-motion";
 
 type ProjectsType = {
     title: string,
@@ -68,7 +71,16 @@ export default function ProjectsSection() {
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                     {projects.map((project: ProjectsType, index) => (
-                        <div key={index} className="bg-neutral-800/60 border border-white/5 rounded-xl overflow-hidden hover:border-blue-400/30 transition-all cursor-pointer duration-300 shadow-blue-400/50 shadow-sm hover:scale-105"
+                        <motion.div
+                            key={index}
+                            className="bg-neutral-800/60 border border-white/5 rounded-xl overflow-hidden hover:border-blue-400/30 transition-all cursor-pointer duration-300 shadow-blue-400/50 shadow-sm hover:scale-105"
+                            initial={{ x: -40, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            transition={{
+                                duration: 0.6,
+                                delay: index * 0.2,
+                                ease: "easeOut"
+                            }}
                         >
 
                             {/* IMAGE */}
@@ -115,7 +127,7 @@ export default function ProjectsSection() {
                                 </div>
 
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
 
                 </div>

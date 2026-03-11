@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image";
 import { Github, Linkedin, ArrowDown, Sparkles } from "lucide-react";
+import { motion } from "framer-motion";
 
 type TechTaskType = {
    name: string 
@@ -59,7 +60,12 @@ export default function HomeSection() {
             <div className="relative max-w-7xl w-full flex flex-col-reverse lg:flex-row items-center gap-14 lg:gap-20">
 
                 {/* TEXTO */}
-                <div className="w-full lg:w-1/2 flex flex-col gap-4 md:gap-6 text-center lg:text-left">
+                <motion.div 
+                    initial={{ y: -60, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
+                    className="w-full lg:w-1/2 flex flex-col gap-4 md:gap-6 text-center lg:text-left">
 
                     <span className="text-blue-400 text-sm uppercase tracking-widest">
                         Desenvolvedor Frontend
@@ -126,10 +132,15 @@ export default function HomeSection() {
 
                     </div>
 
-                </div>
+                </motion.div>
 
                 {/* IMAGEM */}
-                <div className="w-full lg:w-1/2 flex justify-center">
+                <motion.div 
+                    initial={{ x: 60, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
+                    className="w-full lg:w-1/2 flex justify-center">
 
                     <div className="relative">
 
@@ -157,7 +168,7 @@ export default function HomeSection() {
 
                     </div>
 
-                </div>
+                </motion.div>
 
             </div>
 

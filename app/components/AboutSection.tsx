@@ -1,4 +1,6 @@
+"use client"
 import Image from "next/image";
+import { motion } from "framer-motion"
 
 export default function AboutSection() {
     return (
@@ -11,10 +13,15 @@ export default function AboutSection() {
                 {/* IMAGEM */}
                 <div className="w-full lg:w-1/2 flex justify-center">
 
-                    <div className="relative flex justify-center">
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6 }}
+                        viewport={{ once: true }}
+                        className="relative flex justify-center">
 
                         {/* glow */}
-                        <div className="absolute inset-0 bg-blue-500/10 blur-3xl rounded-full" />
+                        <div className="absolute inset-0 bg-blue-500/30 blur-3xl rounded-full" />
 
                         <Image
                             src="/about.svg"
@@ -24,12 +31,17 @@ export default function AboutSection() {
                             className="relative w-64 sm:w-80 lg:w-105 h-auto"
                         />
 
-                    </div>
+                    </motion.div>
 
                 </div>
 
                 {/* TEXTO */}
-                <div className="w-full lg:w-1/2 flex flex-col gap-6 text-center lg:text-left max-w-xl">
+                <motion.div 
+                    initial={{ x: 60, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
+                    className="w-full lg:w-1/2 flex flex-col gap-6 text-center lg:text-left max-w-xl">
 
                     <span className="text-blue-400 text-md uppercase tracking-widest">
                         Sobre mim
@@ -59,7 +71,7 @@ export default function AboutSection() {
                         que gerem valor real para usuários e empresas.
                     </p>
 
-                </div>
+                </motion.div>
 
             </div>
         </section>
