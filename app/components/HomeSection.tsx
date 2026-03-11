@@ -155,6 +155,7 @@ export default function HomeSection() {
                                 fill
                                 className="object-cover"
                                 fetchPriority="high"
+                                quality={75}
                             />
                         </div>
 
