@@ -68,13 +68,13 @@ src
 Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/Matdev6/mateus-bernardo-portfolio
 ```
 
 Entre na pasta:
 
 ```bash
-cd seu-repositorio
+cd mateus-bernardo-portfolio
 ```
 
 Instale as dependências:
@@ -101,9 +101,9 @@ http://localhost:3000
 
 Caso queira entrar em contato:
 
-* 📧 Email: [seuemail@email.com](mailto:seuemail@email.com)
-* 💼 LinkedIn: https://linkedin.com
-* 💻 GitHub: https://github.com
+* 📧 Email: [mateusousa123@hotmail.com](mailto:mateusousa123@hotmail.com)
+* 💼 LinkedIn: [https://linkedin.com](https://www.linkedin.com/in/mateus-bernardo-38542533a/)
+* 💻 GitHub: [https://github.com](https://github.com/Matdev6)
 
 ---
 
