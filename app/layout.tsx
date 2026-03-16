@@ -14,6 +14,10 @@ export const metadata: Metadata = {
 		template: "%s | Mateus Bernardo"
 	},
 
+	verification: {
+		google: "SL-Budxb2FZFRppgJlkZf-VmHC1uUTw5f9NDnqhBioo"
+	},
+
 	description:
 		"Portfólio de Mateus Bernardo, desenvolvedor frontend especializado em React, Next.js, TypeScript e criação de interfaces modernas e performáticas.",
 
