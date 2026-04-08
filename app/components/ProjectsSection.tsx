@@ -26,11 +26,11 @@ const projects: ProjectsType[] = [
     {
         title: "Cruzeiro Esporte Clube Associação",
         description:
-            "Site institucional desenvolvido (atualmente em homologação) para clubes associados do Cruzeiro, com páginas informativas, navegação moderna e layout responsivo.",
+            "Site institucional desenvolvido para clubes associados do Cruzeiro, com páginas informativas, navegação moderna e layout responsivo.",
         image: "/projects/cruzeiro.png",
         tech: ["Next.js", "TypeScript", "TailwindCSS", "Vercel"],
         github: "",
-        deploy: "https://clubesdocruzeirotemp.vercel.app/",
+        deploy: "https://clubesdocruzeiro.com.br/",
     },
     {
         title: "Ghostlab Studio",
